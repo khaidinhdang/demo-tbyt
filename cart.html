@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Shopping Cart - Medical Equipment Co.</title>
     <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="./index.js">
 </head>
 
 <body>
@@ -21,53 +20,39 @@
         </nav>
     </header>
     <div class="container">
-        <h2>Your Shopping Cart</h2>
+        <h2>Giỏ hàng</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Total</th>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Tổng</th>
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>ECG Machine</td>
-                    <td><input type="number" min="1" value="1"></td>
-                    <td>$3,500</td>
-                    <td>$3,500</td>
-                    <td><button class="remove-btn">Remove</button></td>
-                </tr>
-                <tr>
-                    <td>Ultrasound Machine</td>
-                    <td><input type="number" min="1" value="2"></td>
-                    <td>$8,000</td>
-                    <td>$16,000</td>
-                    <td><button class="remove-btn">Remove</button></td>
-                </tr>
+            <tbody id="cart-items">
             </tbody>
         </table>
         <div class="cart-summary">
             <div class="subtotal">
-                Subtotal: <span>$19,500</span>
+                Tổng tiền: <span id="subtotal">$0</span>
             </div>
             <div class="shipping">
-                Shipping: <span>Free</span>
+                Vận chuyển: <span id="shipping">Miễn phí</span>
             </div>
             <div class="total">
-                Total: <span>$19,500</span>
+                Tổng cộng: <span id="total">$0</span>
             </div>
             <div class="checkout">
-                <button>Proceed to Checkout</button>
+                <button id="checkout-button">Tiến hành thanh toán</button>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2023 Medical Equipment Co.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
