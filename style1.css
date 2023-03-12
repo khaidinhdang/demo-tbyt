@@ -384,85 +384,56 @@ main {
   margin: 50px auto;
 }
 
-.cart {
-  border: 1px solid #ccc;
-  padding: 20px;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.cart h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+h2 {
+  text-align: center;
 }
 
-.cart table {
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.cart th,
-.cart td {
+th,
+td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.cart th {
-  background-color: #0071c5;
-  color: #ffffff;
+th {
+  background-color: #f2f2f2;
 }
 
-.cart td {
-  border: 1px solid #ccc;
-}
-
-.cart td img {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-.cart td input[type="number"] {
-  width: 50px;
-  text-align: center;
-}
-
-.cart td button {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.cart td button:hover {
-  background-color: #0071c5;
-  color: #ffffff;
-}
-
-.cart .total {
-  margin-top: 20px;
-  text-align: right;
-}
-
-.cart .total span {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.cart .checkout {
-  margin-top: 20px;
-  text-align: right;
-}
-
-.cart .checkout button {
-  background-color: #0071c5;
-  color: #ffffff;
+.remove-button {
+  background-color: red;
+  color: white;
   border: none;
-  border-radius: 20px;
-  padding: 10px 30px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.cart .checkout button:hover {
-  background-color: #ffffff;
-  color: #0071c5;
+.cart-summary {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.subtotal,
+.shipping,
+.total {
+  margin-bottom: 10px;
+}
+
+.checkout button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
 }
